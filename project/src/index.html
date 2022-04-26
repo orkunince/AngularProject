@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Project</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <script>
+    function pass() {
+      
+      var element = document.getElementById('password')
+      element.type = (element.type == 'password' ? ('text') : ('password'))
+
+      // var fontIcon=document.getElementsByTagName('fa-icon')
+      // if(element.type=='password'){
+      //   element.type='text'
+      //   fontIcon.attributes.icon='faEyeSlash'
+
+      // }else{
+      //   element.type='password'
+      //   fontIcon.attributes.icon='faEye'
+      // }
+      
+    }
+  </script>
+</head>
+
+<body>
+  <div class="container mx-auto my-auto">
+    <app-root></app-root>
+  </div>
+</body>
+
+</html>

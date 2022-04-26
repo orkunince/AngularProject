@@ -1,0 +1,54 @@
+<app-header></app-header>
+<div class="flex flex-row">
+  <div class="basis-1/12">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="basis-11/12 border border-orange-200 p-5">
+    <div class="flex flex-row">
+      <div class="basis-2/6 border border-stone-200 p-3">
+        <div class="border border-orange-200 p-3">
+          <button class="px-2 py-2 rounded bg-orange-300 text-white w-full cursor-default">Search Filter</button>
+          <div class="mt-5">
+            <label for="">Customer ID</label>
+            <input [(ngModel)]="user.userId" type="search" class="form-input rounded w-full mt-1" placeholder="Search.. Customer Id" />
+          </div>
+          <div class="mt-5">
+            <label for="">Username</label>
+            <input [(ngModel)]="user.userName" type="search" class="form-input rounded w-full mt-1" placeholder="Search.. Username" />
+          </div>
+          <div class="mt-5">
+            <label for="">Surname</label>
+            <input [(ngModel)]="user.userSurname" type="search" class="form-input rounded w-full mt-1" placeholder="Search.. Surname" />
+          </div>
+          <div class="mt-5">
+            <label for="">Phone</label>
+            <input [(ngModel)]="user.userPhone" type="search" class="form-input rounded w-full mt-1" placeholder="Search.. Phone" />
+          </div>
+          <div class="mt-5">
+            <label for="">E-mail</label>
+            <input [(ngModel)]="user.userEmail" type="search" class="form-input rounded w-full mt-1" placeholder="Search.. Email" />
+          </div>
+        </div>
+
+        <div class="flex justify-evenly mt-5">
+          <div><button (click)="fncSearch()" class="px-2 py-2 rounded bg-blue-300 hover:bg-blue-500 text-white">Search</button></div>
+          <div><button (click)="fncClear()" class="px-2 py-2 rounded bg-red-300 hover:bg-red-500 text-white">Clear</button></div>
+        </div>
+      </div> <span style="margin:0 5px"></span>
+      <div class="basis-4/6 border border-stone-200 p-3">
+        <div></div>
+        <div>
+          <div class="text-center mt-40">
+          <span class="text-xl">No customer found! Would you like to create the customer?</span>
+        </div>
+        <div class="text-center mt-10">
+          <button (click)="fncCreateCustomer()" class="px-2 py-2 rounded bg-green-500 hover:bg-green-700 text-white">Create Customer</button>
+        </div>
+        </div>
+
+        
+      </div>
+    </div>
+
+  </div>
+</div>
